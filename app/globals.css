@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "~@flaticon/flaticon-uicons/css/all/all";
+
+/* :root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+} */
+
+@layer base {
+  body {
+    @apply dark:bg-[#161616] bg-[#F4F4F4] transition-all ease-in duration-200;
+  }
+}
+
+@layer utilities {
+  .animation-delay-4000 {
+    animation-delay: 19s;
+  }
+}
+
+/* .menu a {
+  position: relative;
+} */
+/* 
+.menu a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  rotate: -41deg;
+  color: azure;
+  background: url(https://assets.codepen.io/162656/long-arrow.svg) no-repeat -85px
+    0 / contain;
+  transition: background-position 0.3s ease-in-out;
+}
+
+.menu a:hover::before {
+  background-position: 0;
+} */
